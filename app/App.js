@@ -1,23 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
+//import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//import { StyleSheet, Text, View } from 'react-native';
+import listaDeGIF from "./src/screens/listaDeGIF";
+ 
 
 
 //funcion principal que ejecuta todos los componentes
 //funcionalidades, pantallas y otras de nuestra aplicacion
 
 export default function App() {
-  return (
-    <>
-      <View style={styles.container}>
-        <Text>hola mundo</Text>
-        <StatusBar style="auto" />
-      </View>
-      
-    </>
-  );
-}
+  return ;
+};
 
+/*
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -26,3 +21,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+*/
