@@ -6,7 +6,7 @@ import { Container, Button, Text } from "native-base";
 const launchscreenBg = require("../../Proyecto-App/app/assets/11.png");
 const launchscreenLogo = require("../../Proyecto-App/app/assets/logo.png");
 
-const Home = () => {
+const paginaPrincipal = () => {
     return (
       <Container>
         <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
@@ -42,4 +42,4 @@ const styles = StyleSheet.create ({
   }
 });
 
-export default Home;
+export default paginaPrincipal;
