@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
+import getEnvVars from "../../enviorement/enviorement";
 
+const launchscreenBg = require("../../assets/11.png");
+const launchscreenLogo = require("../../assets/logo.png");
 
-const launchscreenBg = require("../../Proyecto-App/app/assets/11.png");
-const launchscreenLogo = require("../../Proyecto-App/app/assets/logo.png");
+const PaginaPrincipal = ({navigation}) => {
+  const [gifs, setGifs] = useState("");
+  const [error, setError] = useState(false);
 
-const paginaPrincipal = () => {
+const touch = () => {
+    navigation.navigate("Navegacion", { gifs })
+  }
     return (
       <Container>
         <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
@@ -14,20 +20,19 @@ const paginaPrincipal = () => {
             <ImageBackground source={launchscreenLogo} style={styles.logo} />
           </View>
           <View style={{ marginBottom: 200 }}>
-            <Button
-              style={{ backgroundColor: "#000000", alignSelf: "center" }}>
+            <Button onPress={touch} name="gifs" style={{ backgroundColor: "#000000", alignSelf: "center" }}>
               <Text>COMENZAR</Text>
             </Button>
           </View>
         </ImageBackground>
       </Container>
-    );
+    )
   }
-
 
 const styles = StyleSheet.create ({
   imageContainer: {
     flex: 1,
+    alignItems:"center",
     width: null,
     height: null
   },
@@ -42,4 +47,4 @@ const styles = StyleSheet.create ({
   }
 });
 
-export default paginaPrincipal;
+export default PaginaPrincipal;
