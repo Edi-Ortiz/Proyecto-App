@@ -19,7 +19,7 @@ const PaginaDeNavegacion = () => {
           <View style={{ marginBottom: 50 }}>
             <Button rounded dark
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>SALUDOS</Text>
+              <Text>SALUDOS Y FRASES</Text>
             </Button>
           </View>
           <View style={{ marginBottom: 50 }}>
