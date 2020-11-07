@@ -1,12 +1,12 @@
 import React from "react";
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
+import PaginaPrincipal from "../screens/paginaPrincipal"
+
+const launchscreenBg = require("../../assets/pantallaNavegacion.png");
 
 
-const launchscreenBg = require("../../Proyecto-App/app/assets/pantallaNavegacion.png");
-
-
-const paginaDeNavegacion = () => {
+const PaginaDeNavegacion = () => {
     return (
       <Container>
         <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
@@ -51,4 +51,4 @@ const styles = StyleSheet.create ({
   },
 });
 
-export default paginaDeNavegacion;
+export default PaginaDeNavegacion;
