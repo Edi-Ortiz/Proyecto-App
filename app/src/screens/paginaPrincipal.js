@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
-import getEnvVars from "../../enviorement/enviorement";
+//import getEnvVars from "../../enviorement/enviorement";
 
 const launchscreenBg = require("../../assets/11.png");
 const launchscreenLogo = require("../../assets/logo.png");
