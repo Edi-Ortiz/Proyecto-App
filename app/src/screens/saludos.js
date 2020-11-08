@@ -2,7 +2,7 @@ import React from "react";
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
 
-const launchscreenBg = require("../../Proyecto-App/app/assets/alfabeto1.png");
+const launchscreenBg = require("../../assets/alfabeto1.png");
 
 
 const Saludos = () => {
