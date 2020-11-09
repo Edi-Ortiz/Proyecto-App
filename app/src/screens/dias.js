@@ -37,7 +37,7 @@ const [gifs, setGifs] = useState([]);
         )}
       />
       </View>
-      <View style={{ height: 0, width: 80, left: 10,top: 0}}>
+      <View style={{ height: 0, width: 85, left: 10,top: 0}}>
           <Button rounded dark
             style={{ backgroundColor: "#4a90e2" }}
             onPress={(text) => onEdit("@signwithrobert Monday")}>
