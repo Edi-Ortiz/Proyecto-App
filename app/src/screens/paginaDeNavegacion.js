@@ -22,7 +22,7 @@ const PaginaDeNavegacion = ({navigation}) => {
   }
 
   const dias = () => {
-    navigation.navigate("Dias", {})
+    navigation.navigate("Days of the week", {})
   }
     return (
       <Container>
@@ -46,9 +46,9 @@ const PaginaDeNavegacion = ({navigation}) => {
             </Button>
           </View>
           <View style={{ marginBottom: 50 }}>
-            <Button rounded dark onPress={dias} name = "dias"
+            <Button rounded dark onPress={dias} name = "Days of the week"
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>DIAS</Text>
+              <Text>DAYS OF THE WEEK</Text>
             </Button>
           </View>
         </ImageBackground>

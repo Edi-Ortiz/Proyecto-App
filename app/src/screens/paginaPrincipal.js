@@ -21,7 +21,7 @@ const touch = () => {
           </View>
           <View style={{ marginBottom: 200 }}>
             <Button onPress={touch} name="gifs" style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>COMENZAR</Text>
+              <Text>BEGIN</Text>
             </Button>
           </View>
         </ImageBackground>

@@ -19,7 +19,7 @@ export default function App() {
         <Stack.Screen name="Alfabeto" component={Alfabeto} />
         <Stack.Screen name="Saludos" component={Saludos} />
         <Stack.Screen name="Numeros" component={Numeros} />
-        <Stack.Screen name="Dias" component={Dias} />
+        <Stack.Screen name="Days of the week" component={Dias} />
       </Stack.Navigator>
     </NavigationContainer>
   )
