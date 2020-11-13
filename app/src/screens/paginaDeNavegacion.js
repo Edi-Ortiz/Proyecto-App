@@ -10,7 +10,7 @@ const PaginaDeNavegacion = ({navigation}) => {
   
 
   const touch = () => {
-    navigation.navigate("Alfabeto", {})
+    navigation.navigate("Time", {})
   }
 
   const salu = () => {
@@ -18,11 +18,11 @@ const PaginaDeNavegacion = ({navigation}) => {
   }
 
   const numeros = () => {
-    navigation.navigate("Numeros", {})
+    navigation.navigate("Months and Season", {})
   }
 
   const dias = () => {
-    navigation.navigate("Dias", {})
+    navigation.navigate("Days of the week", {})
   }
     return (
       <Container>
@@ -30,7 +30,7 @@ const PaginaDeNavegacion = ({navigation}) => {
           <View style={{ marginBottom: 50 }}>
             <Button rounded dark onPress={touch} name = "alfabeto"
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text >ALFABETO</Text>
+              <Text >Time</Text>
             </Button>
           </View>
           <View style={{ marginBottom: 50 }}>
@@ -42,13 +42,13 @@ const PaginaDeNavegacion = ({navigation}) => {
           <View style={{ marginBottom: 50 }}>
             <Button rounded dark onPress={numeros} name = "numeros"
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>NUMEROS</Text>
+              <Text>Months and Season</Text>
             </Button>
           </View>
           <View style={{ marginBottom: 50 }}>
-            <Button rounded dark onPress={dias} name = "dias"
+            <Button rounded dark onPress={dias} name = "Days of the week"
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>DIAS</Text>
+              <Text>DAYS OF THE WEEK</Text>
             </Button>
           </View>
         </ImageBackground>

@@ -20,8 +20,8 @@ const touch = () => {
             <ImageBackground source={launchscreenLogo} style={styles.logo} />
           </View>
           <View style={{ marginBottom: 200 }}>
-            <Button onPress={touch} name="gifs" style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>COMENZAR</Text>
+            <Button large dark onPress={touch} name="gifs" style={{ backgroundColor: "#000000", alignSelf: "center" }}>
+              <Text>BEGIN</Text>
             </Button>
           </View>
         </ImageBackground>
@@ -42,8 +42,8 @@ const styles = StyleSheet.create ({
     marginBottom: 30
   },
   logo: {
-    width: 200,
-    height: 350
+    width: 400,
+    height: 200
   }
 });
 
