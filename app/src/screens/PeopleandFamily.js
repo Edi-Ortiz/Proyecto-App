@@ -1,11 +1,11 @@
 import React, {useState}  from "react";
-import {ImageBackground, FlatList, Image, View, StyleSheet } from "react-native";
+import { ImageBackground, FlatList, Image, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
 
 const launchscreenBg = require("../../assets/alfabeto1.png");
 
 export default function App() {
-  const [gifs, setGifs] = useState([]);
+const [gifs, setGifs] = useState([]);
   const [term, updateTerm] = useState('');
   async function fetchGifs() {
     try {
@@ -22,58 +22,62 @@ export default function App() {
     updateTerm(newTerm);
     fetchGifs();
   }
-    return (
-      <Container>
-        <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
-          <View style={{ height: 0, width: 50, left: 10,top: 50}}>
-            <FlatList
-              data={gifs}
-              renderItem={({item}) => (
-               <Image
-                 resizeMode='contain'
-                 style={styles.image}
-                 source={{uri: item.images.original.url}}
-               />
-             )}
-           />
+
+  return (
+    <Container>
+      <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
+      <View style={{height:150, width:350, left:30, top: -150}}>
+      <FlatList
+        data={gifs}
+        renderItem={({item}) => (
+          <Image
+            resizeMode='contain'
+            style={styles.image}
+            source={{uri: item.images.original.url}}
+          />
+        )}
+      />
           </View>
           <View style={{ height: 0, width: 85, left: 10,top: 0}}>
             <Button rounded dark
               style={{ backgroundColor: "#4a90e2" }}
-              onPress={(text) => onEdit("@signwithrobert Monday")}>
-              <Text>YES</Text>
+              onPress={(text) => onEdit("@signwithrobert Baby")}>
+              <Text>baby</Text>
             </Button>
           </View>
-          <View style={{ height: 0, width: 50, left: 70,top: 50}}>
+          <View style={{ height: 0, width: 80, left: 75,top: 0}}>
             <Button rounded dark
               style={{ backgroundColor: "#4a90e2" }}
-              onPress={(text) => onEdit("@signwithrobert No")}>
-              <Text>NO</Text>
+              onPress={(text) => onEdit("@signwithrobert Family")}>
+              <Text>family</Text>
             </Button>
           </View>
-          <View style={{ height: 0, width: 80, left: 135,top: 50}}>
+          <View style={{ height: 0, width: 85, left: 155,top: 0}}>
             <Button rounded dark
               style={{ backgroundColor: "#4a90e2" }}
-              onPress={(text) => onEdit("@signwithrobert Hello")}>
-              <Text>HELLO</Text>
+              onPress={(text) => onEdit("@signwithrobert dentist")}>
+              <Text>dentist</Text>
             </Button>
           </View>
-          <View style={{ height: 0, width: 100, left: 210,top: 50}}>
+          <View style={{ height: 0, width: 100, left: 240,top: 0}}>
             <Button rounded dark
-              style={{ backgroundColor: "#4a90e2" }}>
-              <Text>POR QUÉ</Text>
+              style={{ backgroundColor: "#4a90e2" }}
+              onPress={(text) => onEdit("@signwithrobert Brother")}>
+              <Text>Brother</Text>
             </Button>
           </View>
-          <View style={{ height: 0, width: 100, left: 300,top: 50}}>
+          <View style={{ height: 0, width: 100, left: 10,top: 50}}>
             <Button rounded dark
-              style={{ backgroundColor: "#4a90e2" }}>
-              <Text>ME LLAMO</Text>
+              style={{ backgroundColor: "#4a90e2" }}
+              onPress={(text) => onEdit("@signwithrobert Boyfriend")}>
+              <Text>Boyfriend</Text>
             </Button>
           </View>
-          <View style={{ height: 0, width: 130, left: 10,top: 110}}>
+          <View style={{ height: 0, width: 130, left: 120,top: 50}}>
             <Button rounded dark
-              style={{ backgroundColor: "#4a90e2" }}>
-              <Text>COMO ESTAS</Text>
+              style={{ backgroundColor: "#4a90e2" }}
+              onPress={(text) => onEdit("@signwithrobert Computer Programmer")}>
+              <Text>Computer Programmer</Text>
             </Button>
           </View>
         </ImageBackground>

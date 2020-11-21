@@ -14,7 +14,7 @@ const PaginaDeNavegacion = ({navigation}) => {
   }
 
   const salu = () => {
-    navigation.navigate("Saludos", {})
+    navigation.navigate("People and Family", {})
   }
 
   const numeros = () => {
@@ -36,7 +36,7 @@ const PaginaDeNavegacion = ({navigation}) => {
           <View style={{ marginBottom: 50 }}>
             <Button rounded dark onPress={salu} name = "saludos"
               style={{ backgroundColor: "#000000", alignSelf: "center" }}>
-              <Text>SALUDOS Y FRASES</Text>
+              <Text>People and Family</Text>
             </Button>
           </View>
           <View style={{ marginBottom: 50 }}>
