@@ -22,6 +22,7 @@ const [gifs, setGifs] = useState([]);
     updateTerm(newTerm);
     fetchGifs();
   }
+
   return (
     <Container>
       <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
