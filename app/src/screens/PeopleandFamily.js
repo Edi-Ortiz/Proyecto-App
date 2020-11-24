@@ -17,7 +17,7 @@ const [gifs, setGifs] = useState([]);
     } catch (error) {
       console.warn(error);
     }
-  } /// add facebook fresco
+  } 
   function onEdit(newTerm) {
     updateTerm(newTerm);
     fetchGifs();
