@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import { ImageBackground, View, StyleSheet } from "react-native";
 import { Container, Button, Text } from "native-base";
+import * as Font from 'expo-font';
 //import getEnvVars from "../../enviorement/enviorement";
 
 const launchscreenBg = require("../../assets/11.png");
@@ -8,10 +9,17 @@ const launchscreenLogo = require("../../assets/logo.png");
 
 const PaginaPrincipal = ({navigation}) => {
   const [gifs, setGifs] = useState("");
-  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    (async () => await Font.loadAsync({
+      Roboto: require('native-base/Fonts/Roboto.ttf'),
+      Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
+    }))();
+     }, [])
 
 const touch = () => {
     navigation.navigate("Navegacion", { gifs })
+
   }
     return (
       <Container>

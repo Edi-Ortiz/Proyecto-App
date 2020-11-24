@@ -18,7 +18,7 @@ export default function App() {
     } catch (error) {
       console.warn(error);
     }
-  } /// add facebook fresco
+  } 
   function onEdit(newTerm) {
     updateTerm(newTerm);
     fetchGifs();
